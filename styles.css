@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+header.topo {
+  text-align: center;
+  padding: 40px 20px 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 2rem;
+}
+
+.paragrafo {
+  margin: 0 0 24px;
+  color: #555;
+}
+
+.counter-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin-top: 16px;
+}
+
+#contadorBtn {
+  width: 220px;
+  height: 220px;
+}
+
+.timer-label {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.timer {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 32px;
+  padding: 20px 20px 24px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.timer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.timer-row label {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 0.95rem;
+  color: #333;
+  text-align: left;
+}
+
+.timer-row input {
+  margin-top: 6px;
+  width: 72px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #d1d1d1;
+  font-size: 1rem;
+}
+
+.timer-row button {
+  min-width: auto;
+  width: auto;
+  height: 44px;
+  padding: 0 16px;
+  border-radius: 14px;
+  background: #0066cc;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.timer-display {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 20px 0 0;
+  color: #222;
+}
+
+.timer-row button:hover,
+button:hover {
+  background: #0051a8;
+  transform: translateY(-1px);
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: auto;
+  width: auto;
+  height: auto;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 14px;
+  background: #0066cc;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#contadorBtn {
+  width: 220px;
+  height: 220px;
+  padding: 0;
+  font-size: 1.1rem;
+  border-radius: 50%;
+}
+
+button:active,
+button.pressed {
+  transform: scale(0.92);
+}
+
+#zerarBtn {
+  min-width: 120px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: #e0e0e0;
+  color: #333;
+}
+
+#zerarBtn:hover {
+  background: #cacaca;
+}

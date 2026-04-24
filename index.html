@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Cliques</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Contador de cliques simples</h1>
+    <p class="paragrafo">Clique no botão para contar</p>
+  </header>
+  <section class="counter-area">
+    <button id="contadorBtn">0 cliques</button>
+    <button id="zerarBtn" type="button">Zerar</button>
+    <p class="timer-label">Temporizador</p>
+  </section>
+  <section class="timer">
+    <div class="timer-row">
+      <label>
+        horas
+        <input id="hoursInput" type="number" min="0" value="0">
+      </label>
+      <label>
+        minutos
+        <input id="minutesInput" type="number" min="0" max="59" value="1">
+      </label>
+      <label>
+        segundos
+        <input id="secondsInput" type="number" min="0" max="59" value="0">
+      </label>
+      <button id="startBtn" type="button">Iniciar</button>
+      <button id="pauseBtn" type="button">Parar</button>
+      <button id="setTimerBtn" type="button">Definir tempo</button>
+      <button id="resetTimerBtn" type="button">Zerar</button>
+    </div>
+    <div class="timer-display" id="timerDisplay">00:01:00</div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
